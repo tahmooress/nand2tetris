@@ -1,24 +1,33 @@
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
-// File name: projects/6/max/MaxL.asm
+// File name: projects/6/rect/RectL.asm
 
-// Symbol-less version of the Max.asm program.
+// Symbol-less version of the Rect.asm program.
 // Designed for testing the basic version of the assembler.
 
 @0
 D=M
-@1
-D=D-M
+@23
+D;JLE 
+@16
+M=D
+@16384
+D=A
+@17
+M=D
+@17
+A=M
+M=-1
+@17
+D=M
+@32
+D=D+A
+@17
+M=D
+@16
+MD=M-1
 @10
 D;JGT
-@1
-D=M
-@12
-0;JMP
-@0
-D=M
-@2
-M=D
-@14
+@23
 0;JMP

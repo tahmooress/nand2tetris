@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     }
 
     int ext_code = 0;
-    if (compile(c)) {
+    if (assemble(c)) {
         ext_code = 1;
     }
 

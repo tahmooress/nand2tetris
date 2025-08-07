@@ -116,7 +116,7 @@ Code* init_code(Parser *parser, const char* filename)
     return c;
 }
 
-int compile(Code *c) {
+int assemble(Code *c) {
     int errnum;
     
     errnum = scan(c);
