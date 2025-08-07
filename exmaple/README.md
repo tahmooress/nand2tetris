@@ -7,7 +7,7 @@ After building the assembler using the `make` command:
 ```bash
 make
 ```
-After compiling, you ou can run the assembler on the example file:
+You ou can run the assembler on the example file:
 
 ```bash
 ./bin/assembler example/RectL.asm
